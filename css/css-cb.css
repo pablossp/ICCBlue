@@ -1,0 +1,26 @@
+.modal-backdrop {
+    z-index: 99999;
+ }
+
+ .modal-dialog{
+ 	margin-top: 100px;
+ }
+
+.select2-close-mask{
+    z-index: 100000 !important;
+}
+.select2-dropdown{
+    z-index: 100001 !important;
+}
+
+.datepicker 
+{
+	z-index: 100001 !important;
+}
+
+.glyphicon:hover{
+	cursor: pointer; cursor: hand;
+    box-shadow: 0px 0px 14px #4195fc; 
+    -moz-box-shadow: 0px 0px 14px #4195fc;
+    -webkit-box-shadow: 0px 0px 14px #4195fc;  
+}

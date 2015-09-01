@@ -1,0 +1,56 @@
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 100000">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Iniciar Sesión</h4>
+          </div>
+          <div class="modal-body">
+            <div>
+            <input id="in-username" class="form-control" placeholder="Nombre de Usuario" style="width: 30%; min-width: 200px">
+            <input id="in-password" type="password" class="form-control" placeholder="Contraseña" style="width: 30%; margin-top: 5px; min-width: 200px">
+
+              <br><a href="#" data-toggle="collapse" data-target="#recuperaPW" aria-expanded="false" aria-controls="collapseExample" style="right: 25px; position: absolute">He olvidado la contraseña</a><br>
+            
+                <a href="#" data-toggle="collapse" data-target="#registroUsuario" aria-expanded="false" aria-controls="collapseExample" style="right: 25px; position: absolute">Registrarme</a><br>
+
+                <div class="collapse" id="recuperaPW">
+                  <label class="label label-default" style="margin-top: -3px">Correo Electrónico de Registro</label><br>
+                  <input class="form-control" placeholder="Correo Electrónico"></input>
+                  
+                  <div align="right">
+                    <button class="btn btn-primary">Recuperar Contraseña</button>
+                </div>
+                  <br>
+                  <p style="font-size: 10px"><i>Se enviará la contraseña al correo que haya registrado al momento de crear la cuenta.
+                  </i></p>
+                </div>
+
+                <div class="collapse" id="registroUsuario">
+                  <h5>Registro de Nuevo Usuario</h5>
+                  <br>
+                  <label class="label label-default" style="margin-top: -3px">Nombre y Apellidos</label>
+                  <input id="in-reg-usuario-name" class="form-control" placeholder="Nombre y Apellidos"></input>
+                   <label class="label label-default" style="margin-top: -3px">Nombre de Usuario</label>
+                  <input id="in-reg-usuario-username" class="form-control" placeholder="Nombre de Usuario"></input>
+                 <label class="label label-default" style="margin-top: -3px">Contraseña</label>
+                  <input id="in-reg-usuario-password" type="password" class="form-control" placeholder="Contraseña"></input>
+                  <label class="label label-default" style="margin-top: -3px">Confirmar Contraseña</label>
+                  <input id="in-reg-usuario-spassword" type="password" class="form-control" placeholder="Confirmar Contraseña"></input>
+                   <label class="label label-default" style="margin-top: -3px">e-Mail</label>
+                  <input id="in-reg-usuario-mail" type="email" class="form-control" placeholder="e-Mail"></input>
+                 
+                  <br>
+                  <div align="right"> 
+                    <button id="btn-reg-usuario" class="btn btn-primary" onclick="regUsr()">Registrarme</button>
+                  </div>
+                </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" onclick="login()"><span>Iniciar Sesión</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
