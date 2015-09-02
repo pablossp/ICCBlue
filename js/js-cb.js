@@ -323,7 +323,4 @@ function quitar_fila(therow){
   });
 }
 
-function gitHub()
-{
-  alert("you found the git");
-}
+
