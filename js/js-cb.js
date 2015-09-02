@@ -94,9 +94,14 @@ function showModalPedido(){
     $("#btn-reg-order").text("Registrar Pedido");
     $("#modalRegistro").modal("show");
   }
-function showModalConsulta(){
+function showModalConsultaPedidos(){
     $("#modalConsulta").modal("show");
   }
+
+function showModalConsultaServicios(){
+
+}
+
 function showModalServicio(){
     $("#modal-div-servicios").css("display","");
     $("#modal-div-productos").css("display","none");
@@ -201,7 +206,8 @@ $(document).ready(function(){
             <ul class=\"sub-menu\">\
               <li id=\"li-reg-ped\" onclick=\"showModalPedido()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Registrar Pedido</a></li>\
               <li id=\"li-reg-ser\" onclick=\"showModalServicio()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Registrar Servicio</a></li>\
-              <li id=\"li-con-ped\" onclick=\"showModalConsulta()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Consultar Pedidos</a></li>\
+              <li id=\"li-con-ped\" onclick=\"showModalConsultaPedidos()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Consultar Pedidos</a></li>\
+              <li id=\"li-con-ped\" onclick=\"showModalConsultaServicios()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Consultar Servicios</a></li>\
               <li onclick=\"logout()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Cerrar Sesión</a></li>\
             </ul>\
           </li>");
@@ -211,7 +217,8 @@ $(document).ready(function(){
              <ul class=\"sub-menu\">\
               <li id=\"li-reg-ped\" onclick=\"showModalPedido()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Registrar Pedido</a></li>\
               <li id=\"li-reg-ser\" onclick=\"showModalServicio()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Registrar Servicio</a></li>\
-              <li id=\"li-con-ped\" onclick=\"showModalConsulta()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Consultar Pedidos</a></li>\
+              <li id=\"li-con-ped\" onclick=\"showModalConsultaPedidos()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Consultar Pedidos</a></li>\
+              <li id=\"li-con-ped\" onclick=\"showModalConsultaServicios()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Consultar Servicios</a></li>\
               <li onclick=\"logout()\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-490\"><a href=\"#\">Cerrar Sesión</a></li>\
             </ul>\
           </li>");
